@@ -1,0 +1,76 @@
+body {
+  font-family: var(--mainFont);
+}
+
+.headerr {
+  padding: 56px 0;
+}
+.headerr .nav-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  font-size: 16px;
+}
+
+.textbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.textbox .btn,
+input {
+  padding: 8px 13px;
+}
+.textbox input {
+  width: 266px;
+}
+.textbox form {
+  border: 1px solid #e7e6ef;
+}
+.textbox button,
+input {
+  border: none;
+  outline: none;
+}
+@media screen and (max-width: 1184px) {
+  .nav-content,
+  .textbox {
+    display: none;
+  }
+  .headerr .bar {
+    display: block;
+  }
+}
+/*end header*/
+
+/*start footer*/
+.footer {
+  background-color: #eeeffb;
+}
+.footeritem nav {
+  display: flex;
+  flex-direction: column;
+}
+.footeritem{
+  gap: 43px ;
+}
+.footer .left {
+  gap: 35px;
+  align-items: flex-start;
+}
+.footer .right{
+  width: 60%;
+}
+
+.footer{
+  padding: 95px 0;
+}
+.footer .adress-info{
+  gap: 10px;
+}
+.footer a, .adress-info{
+  color: #8A8FB9;
+}
+.adress-info{
+gap: 10px;
+}

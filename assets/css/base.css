@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.nav-content .its-item {
+  color: black;
+}
+.d-flex {
+  display: flex;
+}
+.flex-dir {
+  flex-direction: column;
+}
+ul {
+  list-style-type: none;
+}
+:root {
+  --mainFont: "Lato", sans-serif;
+  --primarycolor: #fb2e86;
+}
+.gap-1{
+  gap: 21px;
+}
+.gap-2{
+  gap: 25px;
+}
+.btn /*can use for buttons and anchor*/ {
+  background-color: var(--primarycolor);
+  outline: border;
+  border: none;
+  color: white;
+  padding: 16px 40px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #08d15f;
+}
+.primary-col {
+  color: var(--primarycolor);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.test-white {
+  color: #fff;
+}
+.container {
+  width: calc(100% - 320px);
+  margin: auto;
+}
+.headerr .bar {
+  display: none;
+}
+.font-size1{
+  font-size: 17px;
+}
