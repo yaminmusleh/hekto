@@ -12,6 +12,7 @@ a {
 .d-flex {
   display: flex;
 }
+
 .flex-dir {
   flex-direction: column;
 }
@@ -22,10 +23,10 @@ ul {
   --mainFont: "Lato", sans-serif;
   --primarycolor: #fb2e86;
 }
-.gap-1{
+.gap-1 {
   gap: 21px;
 }
-.gap-2{
+.gap-2 {
   gap: 25px;
 }
 .btn /*can use for buttons and anchor*/ {
@@ -56,9 +57,24 @@ ul {
   width: calc(100% - 320px);
   margin: auto;
 }
+@media screen and (max-width: 1400px) {
+  .container {
+    width: calc(100 - 200px);
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: calc(100 - 100px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: calc(100 - 40px);
+  }
+}
 .headerr .bar {
   display: none;
 }
-.font-size1{
+.font-size1 {
   font-size: 17px;
 }

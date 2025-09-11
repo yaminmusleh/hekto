@@ -32,9 +32,12 @@ input {
   border: none;
   outline: none;
 }
+.headerr .bar{
+  display: none;
+}
 @media screen and (max-width: 1184px) {
   .nav-content,
-  .textbox {
+  .headerr .textbox {
     display: none;
   }
   .headerr .bar {
@@ -47,30 +50,53 @@ input {
 .footer {
   background-color: #eeeffb;
 }
+.footer .row {
+  gap: 30px;
+}
 .footeritem nav {
   display: flex;
   flex-direction: column;
 }
-.footeritem{
-  gap: 43px ;
+.footeritem {
+  gap: 43px;
+  width: calc((100% - 70px) / 3);
 }
 .footer .left {
   gap: 35px;
+  width: calc((100% - 30) / 2);
   align-items: flex-start;
 }
-.footer .right{
-  width: 60%;
+.footer .right {
+  width: calc((100% - 30) / 2);
+}
+.footer .right .row {
+  gap: 35px;
+  align-items: flex-start;
 }
 
-.footer{
+.footer {
   padding: 95px 0;
 }
-.footer .adress-info{
+.footer .adress-info {
   gap: 10px;
 }
-.footer a, .adress-info{
-  color: #8A8FB9;
+.footer a,
+.adress-info {
+  color: #8a8fb9;
 }
-.adress-info{
-gap: 10px;
+.adress-info {
+  gap: 10px;
+}
+@media screen and (max-width: 992px) {
+  .footer .left,
+  .footer .right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footeritem,
+  .footer {
+    width: 100%;
+    text-align: center;
+  }
 }
