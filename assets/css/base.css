@@ -12,7 +12,9 @@ a {
 .d-flex {
   display: flex;
 }
-
+.text-center {
+  text-align: center;
+} 
 .flex-dir {
   flex-direction: column;
 }
