@@ -50,6 +50,7 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
+ 
 .test-white {
   color: #fff;
 }
@@ -78,3 +79,4 @@ ul {
 .font-size1 {
   font-size: 17px;
 }
+

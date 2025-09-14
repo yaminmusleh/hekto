@@ -32,7 +32,7 @@ input {
   border: none;
   outline: none;
 }
-.headerr .bar{
+.headerr .bar {
   display: none;
 }
 @media screen and (max-width: 1184px) {
@@ -45,7 +45,68 @@ input {
   }
 }
 /*end header*/
+/*Middle newslatter start*/
+.middle-newslatter {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 28px;
+  display: flex;
+  padding: 174px 0;
+  background-image: url(../img/Group\ 162.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.middle-newslatter h2 {
+  font-size: 35px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: #151875;
+}
+.middle-newslatter a {
+  color: #fff;
+  background-color: var(--primarycolor);
+  padding: 16px 34px;
+  border-radius: 5px;
+}
+.shop-btn {
+  transition: filter 0.3s ease;
+}
+.shop-btn:hover {
+  filter: brightness(90%);
+}
+/*middle newslatter end*/
+.clients {
+  padding: 50px 0;
+  width: 100%;
+}
 
+.clients .row {
+  flex-wrap: nowrap;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.clients .logo {
+  width: calc((100% - 75px) / 6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients .logo img {
+  width: 150px;
+  height: 1 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .clients .logo {
+    width: calc((100% - 30px) / 3);
+  }
+}
 /*start footer*/
 .footer {
   background-color: #eeeffb;
