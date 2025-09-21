@@ -218,7 +218,7 @@ input {
 }
 .leatestprod .img {
   aspect-ratio: 3/2;
-  background-color: #EEEFFB;
+  background-color: #eeeffb;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,6 +265,44 @@ input {
 }
 
 /*end of leatest products*/
+
+.whatoffers .whatoff {
+  width: calc((100% - 80px) / 4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+  margin-top: 55px;
+  padding: 40px 100px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.whatoffers .whatoff:hover{
+  transform: scale(1.05);
+}
+.whatoffers h2,
+.infoaboutservices h3 {
+  font-family: "josefin Sans", sans-serif;
+  color: #151875;
+}
+.whatoffers h2 {
+  font-size: 42px;
+}
+.whatoffers h3 {
+  font-size: 22px;
+}
+.whatoffers .infoaboutservices p{
+  color: #8A8FB9;
+  font-family: 'lato', sans-serif;
+}
+.whatoffers .whatoff .infoaboutservices h3 {
+  padding: 20px 0;
+  margin-top: 27px;
+}
+
+/*What Shopex Offers*/
+
 /*Middle newslatter start*/
 .middle-newslatter {
   align-items: center;
