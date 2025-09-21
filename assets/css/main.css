@@ -15,7 +15,7 @@ body {
 .textbox {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .textbox .btn,
 input {
@@ -53,14 +53,17 @@ input {
 .hero-sec .texts p {
   font-size: 16px;
   font-weight: bold;
+  color: var(--primarycolor);
   font-family: "lato", sans-serif;
 }
 .hero-sec .texts h2 {
   font-size: 53px;
   font-family: "Times New Roman", Times, serif;
 }
-.lorem {
+.hero-sec .texts .lorem {
   margin-bottom: 35px;
+  font-size: 16px;
+  color: #8a8fb9;
 }
 .hero-sec .texts a {
   background-color: var(--primarycolor);
@@ -86,7 +89,7 @@ input {
   align-items: stretch;
 }
 .featured-product h2 {
-  font-size: 30px;
+  font-size: 42px;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   color: #1a0b5b;
@@ -128,21 +131,25 @@ input {
   gap: 14px;
   transition: all 0.4s ease;
 }
-.product:hover .product-details{
-  background-color: #2F1AC4;
+.product:hover .product-details {
+  background-color: #2f1ac4;
   transform: scale(1.05);
   border-radius: 10px;
 }
-.product-details .colorOptions .color:hover{
+.product-details .colorOptions .color:hover {
   transform: scale(1.1);
   border: solid 0.1px black;
+  box-shadow: 0px 0px 5px black;
+}
+.product .product-details h3 {
+  color: var(--primarycolor);
 }
 .product:hover .product-details h3,
 .product:hover .product-details .code-info {
   color: white;
 }
 .product:hover .product-details .color-three {
-  background-color:#ffeac1;
+  background-color: #ffeac1;
 }
 .featured-product .color {
   width: 20px;
@@ -173,10 +180,91 @@ input {
 .color-three {
   background-color: #00009d;
 }
-
-
 /*end feautred-prods*/
+/*start leatest products*/
+.leatestprod {
+  display: flex;
+  flex-wrap: wrap;
+}
+.leatestprod .prod {
+  display: flex;
+  gap: 15.59px;
+  flex-direction: column;
+  width: calc((100% - 74px) / 3);
+  object-fit: contain;
 
+  padding-bottom: 58px;
+  justify-content: center;
+}
+.leatestprod .prod .img img {
+  display: flex;
+  align-items: center;
+  object-fit: contain;
+}
+.leatestprod .code-info-sofa {
+  display: flex;
+  justify-content: center;
+}
+
+.leatestprod .img-sofa2 {
+  position: relative;
+  background-color: transparent !important;
+}
+.leatestprod .prod .myimage {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 10px;
+}
+.leatestprod .img {
+  aspect-ratio: 3/2;
+  background-color: #EEEFFB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.leatestprod .row {
+  gap: 37px;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.leatestprod .code-info-sofa {
+  justify-content: space-between;
+  color: #151875;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "josefin Sans", sans-serif;
+  transition: all 0.3s ease;
+}
+.leatestprod .prod:hover .code-info-sofa,
+.leatestprod .prod:hover .img {
+  transform: scale(1.05);
+}
+.leatestprod h2 {
+  padding: 19px 0;
+  font-size: 42px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: #1a0b5b;
+}
+.leatestprod .offers {
+  display: flex;
+  justify-content: center;
+  column-gap: 58px;
+  margin-bottom: 62px;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  color: #151875;
+  font-weight: regular;
+}
+.leatestprod .offers a:hover {
+  color: var(--primarycolor);
+  text-decoration: underline;
+  transition: all 0.6s ease;
+}
+
+/*end of leatest products*/
 /*Middle newslatter start*/
 .middle-newslatter {
   align-items: center;
@@ -276,11 +364,10 @@ input {
   width: calc((100% - 30) / 2);
   align-items: flex-start;
 }
-.footer .right {
-  width: calc((100% - 30) / 2);
-}
+
 .footer .right .row {
   gap: 35px;
+  padding: 30px;
   align-items: flex-start;
 }
 

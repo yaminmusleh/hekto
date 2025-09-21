@@ -25,6 +25,11 @@ ul {
   --mainFont: "Lato", sans-serif;
   --primarycolor: #fb2e86;
 }
+.stylingforthings{
+  text-decoration: line-through;
+  color: #FB2448;
+}
+
 .gap-1 {
   gap: 21px;
 }
