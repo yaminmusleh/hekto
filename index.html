@@ -61,7 +61,9 @@
               <li>
                 <a href="#" class="its-item">Contact</a>
               </li>
+              
             </ul>
+             <i class="fa-solid fa-bars bar"></i>
           </nav>
           <div class="textbox">
             <form>
@@ -71,18 +73,6 @@
               </button>
             </form>
           </div>
-
-          <svg
-            class="bar"
-            width="30px"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 640 640"
-          >
-            <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-            <path
-              d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
-            />
-          </svg>
         </div>
       </div>
     </header>
@@ -90,24 +80,24 @@
     <section class="hero-sec">
       <div class="container">
         <div class="row">
-          <div class="texts">
-            <p>Best Furniture For Your Castle....</p>
-            <h2>
-              New Furniture Collection<br />
-              Trends in 2020
-            </h2>
-            <p class="lorem">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in
-              est adipiscing <br />in phasellus non in justo.
-            </p>
-            <a href="#" class="btn-hero">Shop Now</a>
-          </div>
-          <div class="image-hero">
-            <img
-              src="./assets/img/sofa promotional header.webp"
-              alt="sofa"
-              width="400px"
-            />
+          <div class="herocontain d-flex">
+            <div class="texts d-flex flex-dir gap-3">
+              <span>Best Furniture For Your Castle....</span>
+              <h2>
+                New Furniture Collection<br />
+                Trends in 2020
+              </h2>
+              <p class="lorem">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna
+                in est adipiscing <br />in phasellus non in justo.
+              </p>
+              <button href="#" class="btn-hero btn-primary btnprim2">
+                Shop Now
+              </button>
+            </div>
+            <div class="image-hero">
+              <img src="./assets/img/sofa promotional header.webp" alt="sofa" />
+            </div>
           </div>
         </div>
       </div>
@@ -402,15 +392,15 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="left d-flex flex-dir">
+          <div class="left d-flex flex-dir gap-3">
             <img src="./assets/img/Hekto_logo.svg" alt="" />
-            <div class="textbox">
-              <form>
-                <input type="email" placeholder="Enter Email Address" />
+            <div class="textbox2">
+              <form class="mail d-flex">
+                <input type="email" placeholder="Enter Email Address..." />
                 <button class="btn" type="submit">Sign Up</button>
               </form>
             </div>
-            <div class="adress-info d-flex flex-dir">
+            <div class="adress-info d-flex flex-dir gap-4">
               <h2 class="font-size1">Contact Info</h2>
               <address class="font-size1">
                 17 Princess Road, London, Greater London NW1 8JR, UK
@@ -419,9 +409,9 @@
           </div>
           <div class="right">
             <div class="row">
-              <div class="footeritem d-flex flex-dir gap-2">
+              <div class="footeritem d-flex flex-dir">
                 <h2>Categories</h2>
-                <nav class="gap-1">
+                <nav class="d-flex flex-dir gap-1 navbar1">
                   <a href="#">Laptops & Computers</a>
                   <a href="#">Cameras & Photography</a>
                   <a href="#">Smart Phones & Tablets</a>
@@ -429,9 +419,9 @@
                   <a href="#">Waterproof Headphones</a>
                 </nav>
               </div>
-              <div class="footeritem flex-dir d-flex gap-2">
+              <div class="footeritem flex-dir d-flex ">
                 <h2>Customer Care</h2>
-                <nav class="gap-1">
+                <nav class=class="d-flex flex-dir gap-1 navbar2">
                   <a href="#">My Account</a>
                   <a href="#">Discount</a>
                   <a href="#">Returns</a>
@@ -439,9 +429,9 @@
                   <a href="#">Order Tracking</a>
                 </nav>
               </div>
-              <div class="footeritem flex-dir d-flex gap-2">
+              <div class="footeritem flex-dir d-flex ">
                 <h2>Pages</h2>
-                <nav class="gap-1">
+                <nav class="d-flex flex-dir gap-1 navbar3">
                   <a href="#">Blog</a>
                   <a href="#">Browse the Shop</a>
                   <a href="#">Category</a>

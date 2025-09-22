@@ -3,7 +3,7 @@ body {
 }
 
 .headerr {
-  padding: 56px 0;
+  padding: 47px 0;
 }
 .headerr .nav-content ul {
   display: flex;
@@ -11,75 +11,137 @@ body {
   gap: 35px;
   font-size: 16px;
 }
-
-.textbox {
+.nav-content i {
+  display: none;
+}
+.textbox,
+.textbox2 {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
 }
 .textbox .btn,
-input {
+input,
+.textbox2 .btn {
   padding: 8px 13px;
 }
-.textbox input {
+.textbox input,
+.textbox2 input {
   width: 266px;
 }
-.textbox form {
+.textbox form,
+.textbox2 form {
   border: 1px solid #e7e6ef;
 }
 .textbox button,
-input {
+input,
+.textbox2 button {
   border: none;
   outline: none;
 }
-.headerr .bar {
-  display: none;
+.headerr .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
 }
-@media screen and (max-width: 1184px) {
-  .nav-content,
-  .headerr .textbox {
+@media screen and (max-width: 1200px) {
+  .headerr .nav-content ul,
+  .textbox {
     display: none;
   }
-  .headerr .bar {
+  .headerr .row i {
     display: block;
   }
 }
+@media screen and (max-width: 992px) {
+  .container {
+    width: calc(100% - 120px);
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc(100% - 70px);
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+}
+
 /*end header*/
 /*start hero-section*/
 .hero-sec {
   background-color: #f2f0ff;
-  padding: 20px 0;
+  padding: 39px 0;
+  position: relative;
 }
-.hero-sec .texts p {
-  font-size: 16px;
-  font-weight: bold;
-  color: var(--primarycolor);
-  font-family: "lato", sans-serif;
+.herocontain {
+  align-items: flex-start;
+  flex: 1 0 60%;
+  flex-wrap: nowrap;
 }
-.hero-sec .texts h2 {
-  font-size: 53px;
-  font-family: "Times New Roman", Times, serif;
+
+.herocontain span,
+p {
+  font-family: var(--mainFont);
 }
-.hero-sec .texts .lorem {
-  margin-bottom: 35px;
-  font-size: 16px;
+.herocontain p {
   color: #8a8fb9;
 }
-.hero-sec .texts a {
-  background-color: var(--primarycolor);
-  outline: border;
-  border: none;
-  color: white;
-  padding: 11px 20px;
+.herocontain span {
+  color: var(--primarycolor);
+}
+.herocontain h2 {
+  font-family: var(--secondaryFont);
+}
 
-  border-radius: 2px;
-  cursor: pointer;
+.texts {
+  justify-content: center;
+  align-items: flex-start;
+}
+.image-hero {
+  flex: 1 0 40%;
+}
+.image-hero img {
+  width: 100%;
+}
+.hero-sec .row .herocontain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (max-width: 690px) {
+  .texts {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .herocontain {
+    flex: 1 0 100%;
+  }
+  .image-hero {
+    flex: 1 0 100%;
+  }
+  .image-hero img {
+    width: 100%;
+  }
+  .hero-sec .row {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 /*start featured-prods*/
 .featured-product .code-info {
   display: flex;
   flex-direction: column;
 }
+
 .featured-product {
   padding: 129px 0;
 }
@@ -266,6 +328,7 @@ input {
 
 /*end of leatest products*/
 
+/*What Shopex Offers*/
 .whatoffers .whatoff {
   width: calc((100% - 80px) / 4);
   display: flex;
@@ -278,7 +341,7 @@ input {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
-.whatoffers .whatoff:hover{
+.whatoffers .whatoff:hover {
   transform: scale(1.05);
 }
 .whatoffers h2,
@@ -292,16 +355,14 @@ input {
 .whatoffers h3 {
   font-size: 22px;
 }
-.whatoffers .infoaboutservices p{
-  color: #8A8FB9;
-  font-family: 'lato', sans-serif;
+.whatoffers .infoaboutservices p {
+  color: #8a8fb9;
+  font-family: "lato", sans-serif;
 }
 .whatoffers .whatoff .infoaboutservices h3 {
   padding: 20px 0;
   margin-top: 27px;
 }
-
-/*What Shopex Offers*/
 
 /*Middle newslatter start*/
 .middle-newslatter {
@@ -364,8 +425,6 @@ input {
     width: calc((100% - 30px) / 3);
   }
 }
-/*start footer*/
-
 @media screen and (max-width: 600px) {
   .featured-product .row {
     flex-direction: column;
@@ -377,12 +436,9 @@ input {
     max-width: 350px;
     margin: 0 auto 20px auto;
   }
-  .headerr .bar {
-    top: 10px;
-    right: 10px;
-    z-index: 1000;
-  }
 }
+/*start footer*/
+
 .footer {
   background-color: #eeeffb;
 }
@@ -392,6 +448,7 @@ input {
 .footeritem nav {
   display: flex;
   flex-direction: column;
+  gap: 21px;
 }
 .footeritem {
   gap: 43px;
@@ -402,7 +459,9 @@ input {
   width: calc((100% - 30) / 2);
   align-items: flex-start;
 }
-
+.footeritem .navbar2 a {
+  margin-bottom: 40px;
+}
 .footer .right .row {
   gap: 35px;
   padding: 30px;
@@ -421,17 +480,4 @@ input {
 }
 .adress-info {
   gap: 10px;
-}
-@media screen and (max-width: 992px) {
-  .footer .left,
-  .footer .right {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 992px) {
-  .footeritem,
-  .footer {
-    width: 100%;
-    text-align: center;
-  }
 }
