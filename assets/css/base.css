@@ -40,7 +40,9 @@ ul {
   text-decoration: line-through;
   color: #FB2448;
 }
-
+.just-cont{
+  justify-content: center;
+}
 .gap-1 {
   gap: 21px;
 }
@@ -52,6 +54,9 @@ ul {
 }
 .gap-4{
   gap: 10px;
+}
+.gap-5{
+  gap: 12px;
 }
 .btn /*can use for buttons and anchor*/ {
   background-color: var(--primarycolor);
