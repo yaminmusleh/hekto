@@ -80,9 +80,9 @@ input,
   position: relative;
 }
 .herocontain {
-  align-items: flex-start;
-  flex: 1 0 60%;
+  align-items: center;
   flex-wrap: nowrap;
+  gap: 20px;
 }
 
 .herocontain span,
@@ -98,10 +98,10 @@ p {
 .herocontain h2 {
   font-family: var(--secondaryFont);
 }
-
 .texts {
   justify-content: center;
   align-items: flex-start;
+  flex: 1 0 60%;
 }
 .image-hero {
   flex: 1 0 40%;
@@ -109,13 +109,7 @@ p {
 .image-hero img {
   width: 100%;
 }
-.hero-sec .row .herocontain {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
+
 @media screen and (max-width: 690px) {
   .texts {
     justify-content: center;
@@ -124,6 +118,7 @@ p {
   }
   .herocontain {
     flex: 1 0 100%;
+    flex-wrap: wrap;
   }
   .image-hero {
     flex: 1 0 100%;
@@ -136,6 +131,7 @@ p {
     gap: 20px;
   }
 }
+
 /*start featured-prods*/
 .featured-product .code-info {
   display: flex;
@@ -242,12 +238,21 @@ p {
 .color-three {
   background-color: #00009d;
 }
+@media screen and (max-width: 600px) {
+  .featured-product .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .featured-product .product {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 20px auto;
+  }
+}
 /*end feautred-prods*/
 /*start leatest products*/
-.leatestprod {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .leatestprod .prod {
   display: flex;
   gap: 15.59px;
@@ -260,6 +265,8 @@ p {
 }
 .leatestprod .prod .img img {
   display: flex;
+  width: 200px;
+  height: 200px;
   align-items: center;
   object-fit: contain;
 }
@@ -275,8 +282,9 @@ p {
 .leatestprod .prod .myimage {
   position: absolute;
   z-index: 2;
-  top: 10px;
+  bottom: 68px ;
   left: 10px;
+  width: 80px !important;
 }
 .leatestprod .img {
   aspect-ratio: 3/2;
@@ -286,11 +294,7 @@ p {
   align-items: center;
   transition: all 0.3s ease;
 }
-.leatestprod .row {
-  gap: 37px;
-  justify-content: flex-start;
-  align-items: stretch;
-}
+
 .leatestprod .code-info-sofa {
   justify-content: space-between;
   color: #151875;
@@ -313,19 +317,48 @@ p {
 .leatestprod .offers {
   display: flex;
   justify-content: center;
-  column-gap: 58px;
-  margin-bottom: 62px;
+  gap: 58px;
+  flex-wrap: wrap;
+  padding-bottom: 62px;
   font-size: 18px;
   font-family: "Lato", sans-serif;
   color: #151875;
-  font-weight: regular;
 }
 .leatestprod .offers a:hover {
   color: var(--primarycolor);
   text-decoration: underline;
   transition: all 0.6s ease;
 }
+@media screen and (max-width: 992px) {
+  .leatestprod .prod {
+    width: calc((100% - 30px) / 2);
+  }
+}
 
+@media screen and (max-width: 600px) {
+  .leatestprod .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leatestprod .prod {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 20px auto;
+  }
+  
+}
+@media screen and (max-width: 400px){
+  html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  .leatestprod .offers{
+    gap: 24px;
+  }
+}
 /*end of leatest products*/
 
 /*What Shopex Offers*/
@@ -335,14 +368,16 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 100px;
-  margin-top: 55px;
   padding: 40px 100px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 .whatoffers .whatoff:hover {
   transform: scale(1.05);
+}
+.whatoffers{
+  
+  padding-bottom: 135px;
 }
 .whatoffers h2,
 .infoaboutservices h3 {
@@ -351,6 +386,7 @@ p {
 }
 .whatoffers h2 {
   font-size: 42px;
+  margin-bottom: 55px;
 }
 .whatoffers h3 {
   font-size: 22px;
@@ -363,7 +399,23 @@ p {
   padding: 20px 0;
   margin-top: 27px;
 }
-
+@media screen and (max-width:550px){
+  .whatoffers .row{
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+@media screen and (max-width:700px){
+  .whatoffers .row{
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1000px){
+  .whatoffers .row{
+    justify-content: center;
+    align-items: center;
+  }
+}
 /*Middle newslatter start*/
 .middle-newslatter {
   align-items: center;
@@ -425,18 +477,7 @@ p {
     width: calc((100% - 30px) / 3);
   }
 }
-@media screen and (max-width: 600px) {
-  .featured-product .row {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .featured-product .product {
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto 20px auto;
-  }
-}
+
 /*start footer*/
 
 .footer {
@@ -480,4 +521,83 @@ p {
 }
 .adress-info {
   gap: 10px;
+}
+@media screen and(max-width: 992px) {
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .left{
+    width:100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .right{
+    width:100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mail {
+    width: calc(100% - 70px);
+    gap: 20px;
+  }
+  .mail input {
+    width: 100%;
+    height: auto;
+  }
+  .mail button {
+    margin: auto;
+  }
+  .right .row{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+  }
+  
+  
+  .footer .left{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer .left .mail{
+    width: calc(100% - 70px); 
+    gap: 20px;
+    flex-direction: column;
+  }
+  .footer .left .mail input{
+    width: 100%; 
+    height: auto;
+  }
+  .footer .left .mail .btn{
+    margin: auto;
+  }
+  .textbox2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   outline: none;
+  }
+}
+@media screen and (max-width: 446px) {
+  .footeritem{
+    width: 100%;
+    gap: 15px;
+  }
+  .right .row{
+    flex-direction: column;
+text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .right{
+    text-align: center;
+  }
+  .footer .row{
+    flex-direction: column;
+  }
 }
