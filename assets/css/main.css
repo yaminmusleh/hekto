@@ -44,6 +44,17 @@ input,
   align-items: center;
   flex-wrap: nowrap;
 }
+.nav-content li  a{
+  transition: all 0.5s ease;
+}
+.nav-content li:hover a{
+  color: var(--primarycolor);
+
+}
+.nav-content li:hover .dropdown{
+  display: block;
+  cursor: pointer;
+}
 @media screen and (max-width: 1200px) {
   .headerr .nav-content ul,
   .textbox {
@@ -540,6 +551,8 @@ p {
 .top-info .top-price{
   font-size: 14px;
 }
+
+
 @media screen and (max-width: 992px) {
   .top-categ .top {
     width: calc((100% - 40px) / 2);
@@ -753,3 +766,4 @@ p {
     flex-direction: column;
   }
 }
+/*end footer*/

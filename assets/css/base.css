@@ -11,7 +11,7 @@
 a {
   text-decoration: none;
 }
-.nav-content .its-item {
+ .its-item {
   color: black;
 }
 .d-flex {
@@ -123,5 +123,8 @@ ul {
 }
 .font-size1 {
   font-size: 17px;
+}
+.headerr .dropdown{
+  display: none;
 }
 
