@@ -191,11 +191,20 @@ p {
   position: absolute;
   
   z-index: 2;
-  bottom: 194px;
+  bottom: 193px;
   left: 15px;
   display: none;
 }
-
+.vieww{
+  position: absolute;
+  top: 196px;
+   z-index: 2;
+  left: 84px;
+  display: none;
+}
+.product:hover .vieww{
+  display: flex;
+}
 .img .essentials button{
   cursor: pointer;
   border: none;
@@ -610,6 +619,17 @@ p {
 .top:hover .top-img {
   transform: scale(1.1);
   box-shadow: -4px 4px 0px #6938a2;
+}
+.viewwshop{
+  position: absolute;
+  top: 153px;
+   z-index: 2;
+  left: 64px;
+  font-family:var(--secondaryFont);
+  display: none;
+}
+.top:hover .viewwshop{
+  display: flex;
 }
 @media screen and (max-width: 992px) {
   .top-categ .top {
