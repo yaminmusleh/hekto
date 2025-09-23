@@ -38,6 +38,10 @@ input,
   border: none;
   outline: none;
 }
+.textbox button:hover{
+  filter: brightness(90%);
+  transition: all 0.3s ease;
+}
 .headerr .row {
   display: flex;
   justify-content: space-between;
@@ -119,7 +123,10 @@ p {
 .image-hero img {
   width: 100%;
 }
-
+.herocontain button:hover{
+  filter: brightness(90%);
+  transition: all 0.3s ease;
+}
 @media screen and (max-width: 690px) {
   .texts {
     justify-content: center;
@@ -861,6 +868,10 @@ p {
     align-items: center;
     outline: none;
   }
+}
+.textbox2 button:hover{
+  filter: brightness(90%);
+  transition: all 0.3s ease;
 }
 @media screen and (max-width: 446px) {
   .footeritem {
