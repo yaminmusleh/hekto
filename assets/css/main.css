@@ -175,6 +175,7 @@ p {
   flex: 1 1 calc(25% - 29px);
   box-shadow: 0px 4px 4px #00000040;
   border-radius: 10px;
+  transition: all 0.4s ease;
 }
 .product .img {
   background-color: #f6f7fb;
@@ -184,40 +185,46 @@ p {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  transition: all 0.4s ease;
+  position: relative;
 }
-.product:hover .img {
+.img .essentials{
+  position: absolute;
+  
+  z-index: 2;
+  bottom: 194px;
+  left: 15px;
+  display: none;
+}
+
+.img .essentials button{
+  cursor: pointer;
+  border: none;
+  padding: 6px;
+  background-color: #EEEFFB;
+  display: flex;
+  border-radius: 100%;
+  text-align: center;
+  align-items: center;
+}
+.product:hover {
   transform: scale(1.05);
 }
-.product .img img {
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  transition: transform 0.4s ease;
-}
-.product:hover img {
-  transform: scale(1.1);
-  width: 150px;
-}
-.featured-product .product-details {
-  padding: 20px;
+.product:hover .essentials{
   display: flex;
-  flex-direction: column;
-  gap: 14px;
-  transition: all 0.4s ease;
 }
 .product:hover .product-details {
   background-color: #2f1ac4;
-  transform: scale(1.05);
+  
   border-radius: 10px;
 }
 .product-details .colorOptions .color:hover {
-  transform: scale(1.1);
   border: solid 0.1px black;
   box-shadow: 0px 0px 5px black;
 }
-.product .product-details h3 {
-  color: var(--primarycolor);
+
+.product:hover img {
+  transform: scale(1.1);
+  width: 150px;
 }
 .product:hover .product-details h3,
 .product:hover .product-details .code-info {
@@ -226,6 +233,24 @@ p {
 .product:hover .product-details .color-three {
   background-color: #ffeac1;
 }
+.product .product-details h3 {
+  color: var(--primarycolor);
+}
+.product .img img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.featured-product .product-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: all 0.4s ease;
+}
+
 .featured-product .color {
   width: 20px;
   height: 6px;
