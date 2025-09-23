@@ -305,7 +305,7 @@ p {
   padding-bottom: 58px;
   justify-content: center;
 }
-.leatestprod .prod .img img {
+.leatestprod .prod .img .sofasofa {
   display: flex;
   width: 200px;
   height: 200px;
@@ -317,21 +317,40 @@ p {
   justify-content: center;
 }
 
-.leatestprod .img-sofa2 {
+.leatestprod .img {
   position: relative;
-  background-color: transparent !important;
 }
 .leatestprod .prod .myimage {
   position: absolute;
   z-index: 2;
-  bottom: 82px;
-  left: 26px;
+  bottom: 180px;
+  left: 10px;
   width: 80px !important;
 }
-.leatestprod .img {
+.leatessentials{
+  position: absolute;
+  z-index: 2;
+  bottom: 40px;
+  left: 26px;
+  align-items: center;
+  display: none;
+}
+.leatessentials button{
+  cursor: pointer;
+  border: none;
+  padding: 6px;
+  background-color: #EEEFFB;
+  display: flex;
+  border-radius: 100%;
+  text-align: center;
+  align-items: center;
+}
+.prod:hover .leatessentials{
+  display: flex;
+}
+.leatestprod .img  {
   aspect-ratio: 3/2;
   background-color: #eeeffb;
-  display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
