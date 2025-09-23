@@ -289,11 +289,19 @@ p {
 .color-three {
   background-color: #00009d;
 }
+@media screen and (max-width: 841px){
+.vieww{
+    left:126px;
+  }
+}
 @media screen and (max-width: 600px) {
   .featured-product .row {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .vieww{
+    left:126px;
   }
   .featured-product .product {
     width: 100%;
