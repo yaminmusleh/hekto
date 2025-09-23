@@ -127,4 +127,6 @@ ul {
 .headerr .dropdown{
   display: none;
 }
-
+.myimage{
+  display: none!important;
+}

@@ -293,8 +293,8 @@ p {
 .leatestprod .prod .myimage {
   position: absolute;
   z-index: 2;
-  bottom: 70px;
-  left: 10px;
+  bottom: 82px;
+  left: 26px;
   width: 80px !important;
 }
 .leatestprod .img {
@@ -317,6 +317,10 @@ p {
 .leatestprod .prod:hover .code-info-sofa,
 .leatestprod .prod:hover .img {
   transform: scale(1.05);
+  background-color: transparent;
+}
+.leatestprod .prod:hover .img .myimage{
+  display: block!important;
 }
 .leatestprod h2 {
   padding: 19px 0;
@@ -523,6 +527,7 @@ p {
 .top-img {
   background-color: #f5f6f8;
   border-radius: 100%;
+  transition: all 0.4s ease;
 }
 .top-img img {
   padding: 46px;
@@ -552,7 +557,10 @@ p {
   font-size: 14px;
 }
 
-
+.top:hover .top-img{
+  transform: scale(1.1);
+  box-shadow: -4px 4px 0px #6938a2;
+}
 @media screen and (max-width: 992px) {
   .top-categ .top {
     width: calc((100% - 40px) / 2);
