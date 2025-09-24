@@ -195,15 +195,11 @@ p {
   left: 15px;
   display: none;
 }
-.vieww{
-  position: absolute;
-  top: 196px;
-   z-index: 2;
-  left: 84px;
+.view{
   display: none;
 }
-.product:hover .vieww{
-  display: flex;
+.product:hover .view{
+  display: block;
 }
 .img .essentials button{
   cursor: pointer;
@@ -289,19 +285,12 @@ p {
 .color-three {
   background-color: #00009d;
 }
-@media screen and (max-width: 841px){
-.vieww{
-    left:126px;
-  }
-}
+
 @media screen and (max-width: 600px) {
   .featured-product .row {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .vieww{
-    left:126px;
   }
   .featured-product .product {
     width: 100%;
